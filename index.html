@@ -11,7 +11,12 @@
 </head>
 <body>
     <div class="title">
-        <h1>EXTRAORDINARY</h1>
+        <h1 class="title-desktop">EXTRAORDINARY</h1>
+
+        <div class="title-mobile">
+            <span class="extra">EXTRA</span>
+            <span class="ordinary">ORDINARY</span>
+        </div>
     </div>
     <div class="heading">
         <h4>IDM AND ONASSIS PRESENTS</h4>
@@ -19,11 +24,6 @@
         <p>
             In this speaker series we are interested in the margins of creative practice: How is unusual work curated, displayed, and conserved? Here we invite practitioners who pursue unusual creative outcomes, produced in  uncommon contexts or engaging unconventional audiences. This series aims to highlight the challenges of working outside of the box at all stages of the creative process: from conceptualization to production to  curation to archival strategies. How do practitioners work with new  methods and contexts to bring their extra-ordinary work to audiences?
         </p>
-        
-        <!--
-        <span id="more"><br><br>In this speaker series we are interested in the margins of creative practice: How is unusual work curated, displayed, and conserved? Here we invite practitioners who pursue unusual creative outcomes, produced in uncommon contexts or engaging unconventional audiences. This series aims to highlight the challenges of working outside of the box at all stages of the creative process: from conceptualization to production to curation to archival strategies. How do practitioners work with new methods and contexts to bring their extra-ordinary work to audiences?</span></p>
-        <button onclick="myFunction()" id="trigger">Learn more...</button>
-        -->
     </div>
     <div class="content">
         <div class="events">
@@ -35,6 +35,11 @@
                         <h3>Series Kickoff with Elizabeth Hénaff and Craig Fahner</h3>
                         <p class="meta">Friday January 30 at 3:30pm</p>
                         <p class="meta">370 Jay Street Room 325</p>
+
+                        <div class="desc">
+                            <p>Event Description</p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
                     </div>
                     <img src="assets/cheryl.png" alt="Artist Talk Poster">
                 </div>
@@ -49,6 +54,11 @@
                         <h3>Words in Space with Shannon Mattern</h3>
                         <p class="meta">Thursday February 12 5:30pm</p>
                         <p class="meta">370 Jay Street 12th Floor Lecture Room</p>
+
+                        <div class="desc">
+                            <p>Event Description</p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
                     </div>
                     <img src="assets/cheryl.png" alt="Screening Poster">
                 </div>
@@ -58,6 +68,11 @@
                         <h3>Steve Gurysh</h3>
                         <p class="meta">Friday March 6 at 3:30pm</p>
                         <p class="meta">370 Jay Street Room 325</p>
+
+                        <div class="desc">
+                            <p>Event Description</p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
                     </div>
                     <img src="assets/cheryl.png" alt="Screening Poster">
                 </div>
@@ -67,6 +82,11 @@
                         <h3>ONX Panel talk</h3>
                         <p class="meta">Wednesday March 25 at 6:00pm</p>
                         <p class="meta">ONX Studios 394 Broadway, 3rd floor New York, 10013</p>
+
+                        <div class="desc">
+                            <p>Event Description</p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
                     </div>
                     <img src="assets/cheryl.png" alt="Screening Poster">
                 </div>
@@ -76,6 +96,11 @@
                         <h3>Isla Hansen</h3>
                         <p class="meta">Friday April 24 at 3:30pm</p>
                         <p class="meta">370 Jay Street Room 325</p>
+
+                        <div class="desc">
+                            <p>Event Description</p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
                     </div>
                     <img src="assets/cheryl.png" alt="Screening Poster">
                 </div>
@@ -84,6 +109,11 @@
                         <h3>Anne Stenne</h3>
                         <p class="meta">TBD</p>
                         <p class="meta">TBD</p>
+
+                        <div class="desc">
+                            <p>Event Description</p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
                     </div>
                     <img src="assets/cheryl.png" alt="Screening Poster">
                 </div>
@@ -94,12 +124,17 @@
                 <h4>Past Events</h4>
 
                 <div class="event past">
-                <div class="event-info">
-                    <h3>Creating Multisensory and Accessible Museum Exhibits<br>with Cheryl Fogle-Hatch</h3>
-                    <p class="meta">October 17th 3:30–4:30pm</p>
-                    <p class="meta">370 Jay Street Room 325</p>
-                </div>
-                <img src="assets/cheryl.png" alt="Cheryl Fogle-Hatch">
+                    <div class="event-info">
+                        <h3>Creating Multisensory and Accessible Museum Exhibits<br>with Cheryl Fogle-Hatch</h3>
+                        <p class="meta">October 17th 3:30–4:30pm</p>
+                        <p class="meta">370 Jay Street Room 325</p>
+
+                        <div class="desc">
+                            <p>Kicking off this year's speaker series, we invite Dr. Cheryl Fogle-Hatch who helps museums develop multi-sensory exhibits for everyone. Creating exhibit content with tactile and audio components engages people with history, the arts, and sciences through an integrated experience, regardless of their visual acuity. </p>
+                            <a href="https://eventbrite.com/..." target="_blank">RSVP</a>
+                        </div>
+                    </div>
+                    <img src="assets/cheryl.png" alt="Cheryl Fogle-Hatch">
                 </div>
             </section>
 
@@ -117,18 +152,19 @@
     </div>  
 
     <script>
-        function myFunction() {
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("trigger");
+        const events = document.querySelectorAll(".event");
 
-        if (moreText.style.display === "inline") {
-            btnText.innerHTML = "Learn more..."; 
-            moreText.style.display = "none";
-        } else {
-            btnText.innerHTML = "^"; 
-            moreText.style.display = "inline";
-        }
-        }
+        events.forEach(event => {
+            event.addEventListener('click', () => {
+                const isOpen = event.classList.contains('is-open');
+
+                events.forEach(e => e.classList.remove('is-open'));
+
+                if(!isOpen) {
+                    event.classList.add('is-open');
+                }
+            });
+        });
     </script>
 </body>
 </html>
